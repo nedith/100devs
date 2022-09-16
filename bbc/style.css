@@ -1,0 +1,203 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*   background:#212121 ; */
+}
+
+header {
+  font-size: 15px;
+  background: #1f1e1e;
+}
+img {
+  width: 30px;
+  height: 30px;
+}
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+div {
+  float: left;
+  width: 5%;
+  margin-left: 5px;
+}
+
+.sign-in {
+  margin-right: 60px;
+}
+
+ul {
+  float: left;
+  width: 70%;
+}
+
+a,
+form,
+.sign-in {
+  border-left: 1px solid;
+  padding: 5px;
+}
+
+li:last-child a {
+  border-right: 1px solid;
+  padding-right: 50px;
+}
+
+.welcome,
+.date {
+  float: left;
+  width: 48%;
+}
+
+.welcome {
+  margin-left: 10px;
+}
+
+.date {
+  padding-top: 20px;
+  color: #a29c9c;
+  /*   margin-right: 22px; */
+  text-align: right;
+}
+
+.middle-east {
+  clear: both;
+  background: url('https://cdn.glitch.global/46bd4bd5-029c-47b7-a19e-ab5bd58b707e/israel.jpg?v=1663246647451')
+    no-repeat;
+  background-size: cover;
+  color: white;
+  height: 300px;
+  padding-left: 20px;
+  padding-top: 150px;
+}
+
+.middle-east p {
+  font-size: 15px;
+}
+
+.middle-east span,
+.canada span,
+.health span,
+.work-life span,
+.culture span {
+  font-size: 10px;
+}
+
+.canada h2,
+.health h2,
+.work-life h2,
+.culture h2 {
+  font-size: 15px;
+}
+
+.middle-east,
+.right-side {
+  float: left;
+  width: 48%;
+}
+
+.middle-east {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.right-side {
+  color: white;
+}
+.canada {
+  background: url('https://cdn.glitch.global/46bd4bd5-029c-47b7-a19e-ab5bd58b707e/american-flag.jpg?v=1663246360857')
+    no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+  padding-left: 5px;
+}
+
+.health {
+  background: url('https://cdn.glitch.global/46bd4bd5-029c-47b7-a19e-ab5bd58b707e/lab.jpg?v=1663246378882')
+    no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+  padding-left: 5px;
+}
+
+.canada,
+.work-life {
+  margin-right: 5px;
+}
+
+.work-life {
+  background: url('https://cdn.glitch.global/46bd4bd5-029c-47b7-a19e-ab5bd58b707e/worklife.jpg?v=1663246395464')
+    no-repeat;
+  backgound-size: cover;
+  padding-top: 70px;
+  padding-left: 5px;
+}
+
+.culture {
+  background: url('https://cdn.glitch.global/46bd4bd5-029c-47b7-a19e-ab5bd58b707e/culture.jpg?v=1663246370857')
+    no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+  padding-left: 5px;
+}
+
+.canada,
+.health,
+.work-life,
+.culture {
+  float: left;
+  width: 48%;
+  height: 148px;
+}
+
+.work-life,
+.culture {
+  margin-top: 5px;
+}
+
+.news-section {
+  margin-top: 70px;
+  margin-left: 10px;
+  padding-top: 50px;
+}
+
+.news {
+  float: left;
+  width: 32%;
+}
+
+.news span {
+  font-size: 10px;
+}
+
+.news p {
+  font-size: 15px;
+}
+
+.news h2 {
+  font-size: 20px;
+}
+.news img {
+  width: 100%;
+  height: auto;
+}
+
+article.news:nth-child(2) {
+  margin-right: 7px;
+}
+
+article.news:nth-child(3) {
+  margin-right: 7px;
+}
