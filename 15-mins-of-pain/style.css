@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  height: 100px;
+  border: 1px solid #777877;
+  clear: both;
+}
+
+section {
+  height: 200px;
+  border: 1px solid #777877;
+  float: left;
+  width: 33.3333%;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    width: 100%;
+    background: linear-gradient(#42082d, #083e42);
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  section {
+    width: 100%;
+    background: radial-gradient(#0f470f, #76321c);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  section,
+  footer,
+  header {
+    background-color: #04222c;
+  }
+}
