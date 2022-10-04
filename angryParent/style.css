@@ -1,0 +1,24 @@
+* {
+ box-sizing: border-box;
+}
+
+label {
+ margin-left: 10px;
+}
+
+h1 {
+text-align: center;
+text-transform: uppercase;
+}
+
+h2 {
+ text-align: center;
+ font-size: 100px;
+ color: darkred;
+ font-weight: bold;
+}
+
+button {
+ display: block;
+ margin: 20px auto;
+}
