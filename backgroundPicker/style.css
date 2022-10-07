@@ -1,0 +1,30 @@
+* {
+box-sizing: border-box;
+}
+
+h1 {
+ text-align: center;
+}
+
+ul {
+ list-style-type: none;
+}
+
+li {
+height: 100px;
+width: 100px;
+ margin: 0 auto;
+border: 1px solid brown;
+}
+
+#purple {
+ background-color: purple;
+}
+
+#green {
+ background-color: green;
+}
+
+#yellow {
+ background-color: yellowgreen;
+}
