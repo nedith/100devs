@@ -1,0 +1,13 @@
+* {
+ box-sizing: border-box;
+}
+
+h1, form {
+ text-align: center;
+ text-transform: capitalize;
+}
+
+button {
+ display: block;
+ margin: 20px auto;
+}
