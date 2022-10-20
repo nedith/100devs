@@ -26,7 +26,7 @@ section {
 @media screen and (min-width: 600px) and (max-width: 800px) {
   section {
     width: 100%;
-    background: radial-gradient(#0f470f, #76321c);
+    background: radial-gradient(#0f470f, #ce3e0f);
   }
 }
 
