@@ -14,6 +14,14 @@ alert(numbers.reduce((sum, c) => sum + c, 0));
 
 //Create a function that takes in an array of numbers
 //Return a new array of numbers that is every original number squared
+function arrNumbers(nums) {
+  let newArray = [];
+  for (let i = 0; i < nums.length; i++) {
+    newArray.push(nums[i] * nums[i]);
+  }
+  return newArray;
+}
+console.log(arrNumbers([1, 2, 3, 4, 5]));
 
 //Create a function that takes string
 //Print the reverse of that string to the console
