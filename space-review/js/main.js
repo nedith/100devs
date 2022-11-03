@@ -10,16 +10,19 @@ let numbers = [2, 4, 5, 8, 10, 14, 20];
 // alert(sum);
 
 // Solution 2
-alert(numbers.reduce((sum, c) => sum + c, 0));
+// alert(numbers.reduce((sum, c) => sum + c, 0));
 
 //Create a function that takes in an array of numbers
 //Return a new array of numbers that is every original number squared
 function arrNumbers(nums) {
-  let newArray = [];
-  for (let i = 0; i < nums.length; i++) {
-    newArray.push(nums[i] * nums[i]);
-  }
-  return newArray;
+  // let newArray = [];
+  // for (let i = 0; i < nums.length; i++) {
+  //   newArray.push(nums[i] * nums[i]);
+  // }
+  // return newArray;
+
+  // Solution 2
+  return nums.map((num) => (num * num));
 }
 console.log(arrNumbers([1, 2, 3, 4, 5]));
 
