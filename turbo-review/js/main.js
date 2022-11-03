@@ -17,14 +17,26 @@ function rockPaperScissor() {
   else if (choice <= 0.67) return 'paper';
   else return 'scissor';
 }
-console.log(rockPaperScissor());
-console.log(rockPaperScissor());
-console.log(rockPaperScissor());
-console.log(rockPaperScissor());
-console.log(rockPaperScissor());
+// console.log(rockPaperScissor());
+// console.log(rockPaperScissor());
+// console.log(rockPaperScissor());
+// console.log(rockPaperScissor());
+// console.log(rockPaperScissor());
 
 // *Conditionals*
 //Create a function that takes in a choice (rock, paper, or scissors) and determines if they won a game of rock paper scissors against a bot using the above function
+function game(myChoice) {
+  if (rockPaperScissor() === myChoice) {
+    return 'It is a tie!!!';
+  } else if (
+    (rockPaperScissor() === 'rock' && myChoice === 'paper') ||
+    (rockPaperScissor() === 'rock' && myChoice === 'scissor') ||
+    (rockPaperScissor() === 'paper' && myChoice === 'scissor')
+  ) {
+    return 'You won!!';
+  } else return 'You lost!!!';
+}
+console.log(game('scissor'));
 
 //*Loops*
 //Create a function that takes an array of choices. Play the game x times where x is the number of choices in the array. Print the results of each game to the console.
