@@ -35,3 +35,10 @@ reverseString('edith');
 
 //Create a function that takes in a string
 //Alert if the string is a palindrome or not
+function palindrome(string) {
+  let reversed = string.split('').reverse().join('');
+  reversed === string ? alert('palindrome!!!') : alert('not a palindrome!');
+}
+palindrome('anna');
+palindrome('bob');
+palindrome('edith');
