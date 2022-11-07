@@ -40,3 +40,7 @@ console.log(game('scissor'));
 
 //*Loops*
 //Create a function that takes an array of choices. Play the game x times where x is the number of choices in the array. Print the results of each game to the console.
+function choicesGame(arrChoices) {
+  arrChoices.forEach((item) => console.log(item));
+}
+choicesGame(['xbox', 'death con', 'vampires', 'dragons']);
