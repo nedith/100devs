@@ -11,7 +11,8 @@ alert(sentence.endsWith('?'));
 
 //Declare a variable, assign it a string of multiple words, replace every "jr. dev" with "software engineer", and print it to the console
 let multipleWords = 'I am a jr.dev at 100 Devs agency';
-console.log(multipleWords.replace('jr.dev', 'software engineer'));
+// console.log(multipleWords.replace('jr.dev', 'software engineer'));
+console.log(multipleWords.replaceAll('jr.dev', 'software engineer'));
 
 // *Functions*
 // Create a function that returns rock, paper, or scissors as randomly as possible
