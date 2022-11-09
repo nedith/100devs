@@ -31,7 +31,7 @@ function rockPaperScissor() {
 // *Conditionals*
 //Create a function that takes in a choice (rock, paper, or scissors) and determines if they won a game of rock paper scissors against a bot using the above function
 function game(myChoice) {
-  if (rockPaperScissor() === myChoice) {
+  if (rockPaperScissor() === myChoice) { // better to store rockPaperScissor in a variable for ease of use
     return 'It is a tie!!!';
   } else if (
     (rockPaperScissor() === 'rock' && myChoice === 'paper') ||
