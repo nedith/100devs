@@ -1,9 +1,13 @@
 // *Variables*
 // Declare a variable and assign it to a sentance as a string. Alert if the sentance is a question
 let sentence = 'What is your name?';
-sentence.endsWith('?')
-  ? alert('I am a question!!!')
-  : alert('I am a statement!!');
+// solution 1
+// sentence.endsWith('?')
+  // ? alert('I am a question!!!')
+//   : alert('I am a statement!!');
+
+// Solution 2
+alert(sentence.endsWith('?')); 
 
 //Declare a variable, assign it a string of multiple words, replace every "jr. dev" with "software engineer", and print it to the console
 let multipleWords = 'I am a jr.dev at 100 Devs agency';
