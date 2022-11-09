@@ -19,7 +19,7 @@ console.log(multipleWords.replaceAll('jr.dev', 'software engineer'));
 function rockPaperScissor() {
   let choice = Math.random();
   if (choice <= 0.33) return 'rock';
-  else if (choice <= 0.67) return 'paper';
+  else if (choice <= 0.66) return 'paper';
   else return 'scissor';
 }
 // console.log(rockPaperScissor());
