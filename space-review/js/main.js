@@ -22,7 +22,7 @@ function arrNumbers(nums) {
   // return newArray;
 
   // Solution 2
-  return nums.map((num) => num * num);
+  return nums.map((num) => num ** 2);
 }
 console.log(arrNumbers([1, 2, 3, 4, 5]));
 
