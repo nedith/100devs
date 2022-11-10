@@ -21,3 +21,6 @@ const campione = new Pizza(
   ['minced meat', 'mushrooms', 'onions'],
   'circle'
 );
+
+Pizza.prototype.cheese = true;
+
