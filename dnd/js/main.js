@@ -13,21 +13,21 @@ function getFetch() {
       document.querySelector('h3').innerText += data.classes[0].name;
       console.log(data.subclasses);
 
-      // hard code data into the DOM
-      //   document.querySelector('ul').innerHTML += `<li>${data.subclasses[0].index}</li>
-      // <li>${data.subclasses[0].name}</li>
-      // <li>${data.subclasses[0].url}</li>`
-
-      // Dynamically put data into the DOM
-      data.subclasses.forEach((el) => {
-        console.log(el);
-        // create li
-        const li = document.createElement('li');
-        // put text into li
-        li.textContent = el.name;
-        // append to ul
-        document.querySelector('ul').appendChild(li);
+      // Simpler version to put data into the DOM
+      data.subclasses.forEach((obj) => {
+        document.querySelector('ul').innerHTML += `<li>${obj.name}</li>`;
       });
+
+      // Another solution to put data into the DOM
+      //   data.subclasses.forEach((el) => {
+      //     console.log(el);
+      // create li
+      // const li = document.createElement('li');
+      // put text into li
+      // li.textContent = el.name;
+      // append to ul
+      // document.querySelector('ul').appendChild(li);
+      //   });
     })
     .catch((err) => {
       console.log(`error ${err}`);
