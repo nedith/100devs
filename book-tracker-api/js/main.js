@@ -14,9 +14,10 @@ function getTitle() {
       console.log(data.title);
 
       // Store title in local storage
-      localStorage.setItem('books', data.title);
+      let books = localStorage.getItem('books') + ', ' + data.title;
+      localStorage.setItem('books', books);
       document.querySelector('h2').innerText =
-        localStorage.getItem('books') + '.';
+        localStorage.getItem('books');
     })
     .catch((err) => {
       console.log(`error ${err}`);
