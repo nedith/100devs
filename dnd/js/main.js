@@ -11,9 +11,23 @@ function getFetch() {
       console.log(data);
       document.querySelector('h2').innerText += data.name;
       document.querySelector('h3').innerText += data.classes[0].name;
-      document.querySelector('ul').innerHTML += `<li>${data.subclasses[0].index}</li>
-    <li>${data.subclasses[0].name}</li>
-    <li>${data.subclasses[0].url}</li>`
+      console.log(data.subclasses);
+
+      // hard code data into the DOM
+      //   document.querySelector('ul').innerHTML += `<li>${data.subclasses[0].index}</li>
+      // <li>${data.subclasses[0].name}</li>
+      // <li>${data.subclasses[0].url}</li>`
+
+      // Dynamically put data into the DOM
+      data.subclasses.forEach((el) => {
+        console.log(el);
+        // create li
+        const li = document.createElement('li');
+        // put text into li
+        li.textContent = el.name;
+        // append to ul
+        document.querySelector('ul').appendChild(li);
+      });
     })
     .catch((err) => {
       console.log(`error ${err}`);
