@@ -2,7 +2,7 @@
 document.querySelector('button').addEventListener('click', getTitle);
 
 // Book to persist in the DOM on page load
-document.querySelector('h2').innerText = localStorage.getItem('books') + ',';
+document.querySelector('h2').innerText = localStorage.getItem('books');
 
 function getTitle() {
   const choice = document.querySelector('input').value;
@@ -14,12 +14,17 @@ function getTitle() {
       console.log(data.title);
 
       // Store title in local storage
-      let books = localStorage.getItem('books') + ', ' + data.title;
-      localStorage.setItem('books', books);
-      document.querySelector('h2').innerText =
-        localStorage.getItem('books');
+      if (!localStorage.getItem('books')) {
+        localStorage.setItem('books', data.title);
+      } else {
+        let books = localStorage.getItem('books') + ' ; ' + data.title;
+        localStorage.setItem('books', books);
+      }
+      document.querySelector('h2').innerText = localStorage.getItem('books');
     })
+
     .catch((err) => {
       console.log(`error ${err}`);
     });
 }
+ 
