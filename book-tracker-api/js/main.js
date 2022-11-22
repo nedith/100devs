@@ -27,4 +27,3 @@ function getTitle() {
       console.log(`error ${err}`);
     });
 }
- 
