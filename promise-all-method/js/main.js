@@ -1,21 +1,20 @@
-// Getting data from can-store API using fetch() API
-const fetchedPromise = fetch(
+// Using Promise.all() method
+const fetchPromise1 = fetch(
   'https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json'
 );
+const fetchPromise2 = fetch(
+  'https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/not-found'
+);
+const fetchPromise3 = fetch(
+  'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json'
+);
 
-console.log(fetchedPromise);
-
-fetchedPromise
-  .then((response) => {
-    if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
-  else return response.json();
-  
-  })
-  .then((data) => {
-    console.log(data[0].name);
+Promise.all([fetchPromise1, fetchPromise2, fetchPromise3])
+  .then((responses) => {
+    for (const response of responses) {
+      console.log(`${response.url}: ${response.status}`);
+    }
   })
   .catch((error) => {
-    console.log(`Could not get products: ${error}`);
+    console.log(`Failed to fetch: ${error}`);
   });
-
-console.log('Started Request...');
