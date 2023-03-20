@@ -107,6 +107,6 @@ const bob = new Back('Bob', 'Back-end', 'Node');
 
 let agency = [edith, machi, bob];
 
-for (let person of agency) {
+for (person of agency) {
   person.sayHello();
 }
