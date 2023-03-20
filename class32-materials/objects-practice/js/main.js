@@ -65,11 +65,16 @@ class Contractor {
   sayHello() {
     console.log(`Hello, I am on the ${this._role} team at #100Devs!`);
   }
+
+  sayBye() {
+    console.log('Its been a pleasure working with you folks!');
+  }
 }
 
 class Front extends Contractor {
   constructor(name, role, tech) {
     super(name, role);
+
     this._tech = tech;
   }
 
@@ -81,6 +86,11 @@ class Front extends Contractor {
     console.log(
       `Hello, I am on the ${this._role} team at #100Devs and I use ${this._tech}`
     );
+  }
+
+  sayBye() {
+    super.sayBye();
+    console.log('BYEEEEEE!!!');
   }
 }
 
