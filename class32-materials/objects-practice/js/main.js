@@ -104,3 +104,9 @@ class Back extends Contractor {
 const edith = new Contractor('Edith', 'Back-end');
 const machi = new Front('Machi', 'Front-end', 'React');
 const bob = new Back('Bob', 'Back-end', 'Node');
+
+let agency = [edith, machi, bob];
+
+for (let person of agency) {
+  person.sayHello();
+}
