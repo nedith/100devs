@@ -1,6 +1,6 @@
 // Getting data from can-store API using fetch() API
 const fetchedPromise = fetch(
-  'https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/product.json'
+  'https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json'
 );
 
 console.log(fetchedPromise);
