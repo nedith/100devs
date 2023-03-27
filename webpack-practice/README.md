@@ -17,3 +17,5 @@ to bundle your application
 // npm install webpack webpack cli --save-dev
 
 // npx webpack init
+
+// Install babel to transpile ES6 into ES5
