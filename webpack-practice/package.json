@@ -11,5 +11,8 @@
   "devDependencies": {
     "webpack": "^5.76.3",
     "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "moment": "^2.29.4"
   }
 }
